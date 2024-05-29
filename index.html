@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta chatset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/71c2d0aa4d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header" data-video="images/background.mp4">
+        <video autoplay loop muted><source src="images/background.mp4" type="video/mp4"></video>
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Dev</p>
+                <h1>Hi, Yo soy <span>El Tama</span><br>but you can call me Tama</h1>
+            </div>
+        </div>
+    </div>
+    <!--------------About me----------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit maecenas fames, nascetur pharetra
+                        dignissim nec luctus fringilla rhoncus sollicitudin lacus, pellentesque viverra class montes
+                        felis pretium bibendum nam. Sociis fringilla velit non iaculis vulputate venenatis risus litora,
+                        conubia imperdiet ridiculus interdum netus urna neque rhoncus, vehicula metus sem sed quisque
+                        class erat. Ante erat dictum nisi aptent pretium et nulla mi, at congue netus platea accumsan
+                        tempor. Aenean ligula senectus hac diam nibh auctor ut fermentum, interdum convallis in pulvinar
+                        suspendisse cras maecenas, rutrum lacinia imperdiet neque augue fringilla magnis.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Design WebApp interfaces</li>
+                            <li><span>Web Dev</span><br>Web app Dev</li>
+                            <li><span>App Dev</span><br>Building Android/IOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Diamont on League</span><br>No more experience yet</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BUAP</span><br>Studing a CS degree</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------Services----------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web design</h2>
+                    <p>Tempus curae proin faucibus himenaeos tortor bibendum erat lacinia, et phasellus porttitor non
+                        consequat accumsan magna porta, dui pellentesque metus nisl nam aliquet purus. <a href="#">Learn
+                            more</a></p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX design</h2>
+                    <p>Tempus curae proin faucibus himenaeos tortor bibendum erat lacinia, et phasellus porttitor non
+                        consequat accumsan magna porta, dui pellentesque metus nisl nam aliquet purus. <a href="#">Learn
+                            more</a></p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <h2>App design</h2>
+                    <p>Tempus curae proin faucibus himenaeos tortor bibendum erat lacinia, et phasellus porttitor non
+                        consequat accumsan magna porta, dui pellentesque metus nisl nam aliquet purus. <a href="#">Learn
+                            more</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------Portfolio---------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social media app</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit nam lectus, cras non sapien nisi ac
+                            senectus hendrerit.</p>
+                        <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music app</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit nam lectus, cras non sapien nisi ac
+                            senectus hendrerit.</p>
+                        <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online shop app</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit nam lectus, cras non sapien nisi ac
+                            senectus hendrerit.</p>
+                        <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!---------------Contact---------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>maxxor779@gmail.com</p>
+                    <p><i class="fa-brands fa-whatsapp"></i>8333248524</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="https://giphy.com/clips/xbox-xbox-series-x-elden-ring-the-lands-between-QfsMVLtzf5uOSu8sIN"
+                        target="_blank" class="btn btn2">1v1 Me</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Tama <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
